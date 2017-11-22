@@ -15,6 +15,14 @@ import AlamofireImage
 class KatalogBukuTC: UITableViewController {
      var nampungId : String? = nil
     var arrayKatalogBerita = [[String:String]]()
+    
+    var nKategori:String?
+    var nJudulBuku:String?
+    
+    var nCoverBuku:String?
+    var nSynopsis:String?
+    var nPenulisbuku:String?
+    var nTglKategori:String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,12 +76,55 @@ class KatalogBukuTC: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellKatalog", for: indexPath) as! CellKatalogBuku
 
         // Configure the cell...
+        
+        var serverid = arrayKatalogBerita[indexPath.row]
+        
+        var id =  serverid["id_berita"]
+        let judulbuku = serverid["judul_buku"]
+        let nama_kategori = serverid["nama_kategori"]
+        let synopsis = serverid["synopsis"]
+        let penulis_buku = serverid["penulis_buku"]
+        let tglTerbit = serverid["tanggal_terbit"]
+        // print(judul)
+        let gambarbuku = serverid["cover_buku"]
+        
+        //pindahkan ke label
+        cell.labelJudulBuku.text = judulbuku
+        cell.labelKategori.text = nama_kategori
+        cell.labelPenulis.text = penulis_buku
+        
+        
+        
+        //download gambar dari server
+        
+        //download gambar dari server
+        Alamofire.request("http://localhost/DehelpServer/foto/"+gambarbuku!).responseImage { (datagambar) in
+            
+            //check response
+            if datagambar.result.isSuccess {
+                
+                //ambil gambar yang udah dikirim server
+                let gambarserver = datagambar.result.value
+                
+                //tempelin ke image di cell tableview
+                cell.imgKatalogBuku.image = gambarserver
+                
+            }
+                //if error
+            else{
+                
+            }
+        }
 
         return cell
     }
+    
+    
+    
+    
     
 
     /*

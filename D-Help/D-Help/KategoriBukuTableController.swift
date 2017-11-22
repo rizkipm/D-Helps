@@ -103,6 +103,19 @@ class KategoriBukuTableController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //deklarasi idStoryBoard untuk pindah halaman
+        let idStoryBoard = storyboard?.instantiateViewController(withIdentifier: "katalog_buku") as! KatalogBukuTC
+        
+        let id_kategori = arrayKategoriBuku[indexPath.row]["id_kategori"]
+        //variable untuk menampung id_kategori yg d lempar
+        idStoryBoard.nampungId = id_kategori
+        
+        show(idStoryBoard, sender: self)
+        
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.

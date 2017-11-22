@@ -465,67 +465,68 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="156"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hb9-gs-HBh" id="WrR-oL-eDk">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="155.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aU2-sm-EpA">
-                                            <rect key="frame" x="17" y="8" width="107" height="140"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="140" id="0Pm-FF-b6X"/>
-                                                <constraint firstAttribute="width" constant="107" id="dbC-gR-mIb"/>
-                                                <constraint firstAttribute="width" secondItem="aU2-sm-EpA" secondAttribute="height" multiplier="107:140" id="llJ-l6-IlW"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Judul Buku" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahd-fb-OcL">
-                                            <rect key="frame" x="132" y="8" width="92" height="21"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategori" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZU9-l7-GZb">
-                                            <rect key="frame" x="132" y="28" width="91" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="Q4s-FN-zFG"/>
-                                            </constraints>
+                                            <rect key="frame" x="160" y="20" width="152" height="29"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penulis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckX-W9-pnO">
-                                            <rect key="frame" x="132" y="49" width="46.5" height="17"/>
+                                            <rect key="frame" x="160" y="49" width="46.5" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tgl Terbit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gnl-V7-XGg">
-                                            <rect key="frame" x="132" y="71.5" width="92" height="14.5"/>
+                                            <rect key="frame" x="160" y="67" width="152" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aU2-sm-EpA">
+                                            <rect key="frame" x="30" y="8" width="107" height="148"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="148" id="MGR-iw-Us8"/>
+                                                <constraint firstAttribute="width" secondItem="aU2-sm-EpA" secondAttribute="height" multiplier="107:148" id="Vpq-Pm-iql"/>
+                                                <constraint firstAttribute="width" constant="107" id="xRk-Z1-uIU"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Judul Buku" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahd-fb-OcL">
+                                            <rect key="frame" x="160" y="8" width="152" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="aU2-sm-EpA" firstAttribute="top" secondItem="WrR-oL-eDk" secondAttribute="topMargin" id="8wF-ap-VLJ"/>
-                                        <constraint firstItem="aU2-sm-EpA" firstAttribute="centerY" secondItem="Gnl-V7-XGg" secondAttribute="centerY" id="AHA-P5-bh6"/>
-                                        <constraint firstItem="ckX-W9-pnO" firstAttribute="leading" secondItem="aU2-sm-EpA" secondAttribute="trailing" constant="8" symbolic="YES" id="BIx-2p-7ro"/>
-                                        <constraint firstItem="ZU9-l7-GZb" firstAttribute="centerX" secondItem="ahd-fb-OcL" secondAttribute="centerX" id="BLW-Ag-Dhv"/>
-                                        <constraint firstItem="ahd-fb-OcL" firstAttribute="leading" secondItem="aU2-sm-EpA" secondAttribute="trailing" constant="8" symbolic="YES" id="Iru-ft-P5D"/>
-                                        <constraint firstItem="aU2-sm-EpA" firstAttribute="top" secondItem="ahd-fb-OcL" secondAttribute="top" id="Kwf-6r-qq5"/>
-                                        <constraint firstItem="ZU9-l7-GZb" firstAttribute="top" secondItem="WrR-oL-eDk" secondAttribute="topMargin" constant="20" id="MWx-9r-feN"/>
-                                        <constraint firstItem="ckX-W9-pnO" firstAttribute="top" secondItem="ZU9-l7-GZb" secondAttribute="bottom" id="TvR-6t-q1X"/>
-                                        <constraint firstItem="Gnl-V7-XGg" firstAttribute="leading" secondItem="aU2-sm-EpA" secondAttribute="trailing" constant="8" symbolic="YES" id="WT3-uZ-NHy"/>
-                                        <constraint firstItem="ZU9-l7-GZb" firstAttribute="centerX" secondItem="Gnl-V7-XGg" secondAttribute="centerX" id="aq8-rf-YlU"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ckX-W9-pnO" secondAttribute="trailing" constant="20" symbolic="YES" id="eda-ii-S2o"/>
-                                        <constraint firstItem="aU2-sm-EpA" firstAttribute="leading" secondItem="WrR-oL-eDk" secondAttribute="leadingMargin" constant="9" id="hJt-4b-Rd5"/>
-                                        <constraint firstItem="ZU9-l7-GZb" firstAttribute="leading" secondItem="aU2-sm-EpA" secondAttribute="trailing" constant="8" symbolic="YES" id="sbC-Ve-wP0"/>
+                                        <constraint firstItem="ahd-fb-OcL" firstAttribute="leading" secondItem="Gnl-V7-XGg" secondAttribute="leading" id="91e-fg-Cqq"/>
+                                        <constraint firstItem="aU2-sm-EpA" firstAttribute="leading" secondItem="WrR-oL-eDk" secondAttribute="leadingMargin" constant="22" id="BDD-Mw-CcH"/>
+                                        <constraint firstItem="Gnl-V7-XGg" firstAttribute="top" secondItem="ckX-W9-pnO" secondAttribute="bottom" constant="1" id="Bgp-kC-XoP"/>
+                                        <constraint firstItem="ahd-fb-OcL" firstAttribute="trailing" secondItem="ZU9-l7-GZb" secondAttribute="trailing" id="GpN-Mz-nJJ"/>
+                                        <constraint firstItem="ahd-fb-OcL" firstAttribute="leading" secondItem="aU2-sm-EpA" secondAttribute="trailing" constant="23" id="OtJ-tw-fXF"/>
+                                        <constraint firstItem="ahd-fb-OcL" firstAttribute="top" secondItem="aU2-sm-EpA" secondAttribute="top" id="QqU-Zl-19v"/>
+                                        <constraint firstItem="aU2-sm-EpA" firstAttribute="top" secondItem="WrR-oL-eDk" secondAttribute="topMargin" id="RNV-8P-d3s"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Gnl-V7-XGg" secondAttribute="bottom" constant="73.5" id="V10-Ml-xpg"/>
+                                        <constraint firstItem="ahd-fb-OcL" firstAttribute="trailing" secondItem="Gnl-V7-XGg" secondAttribute="trailing" id="YiP-uQ-krj"/>
+                                        <constraint firstItem="ahd-fb-OcL" firstAttribute="trailing" secondItem="WrR-oL-eDk" secondAttribute="trailingMargin" id="bh6-O6-7Aq"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="aU2-sm-EpA" secondAttribute="bottom" constant="7.5" id="hfk-qB-64b"/>
+                                        <constraint firstItem="ckX-W9-pnO" firstAttribute="top" secondItem="ZU9-l7-GZb" secondAttribute="bottom" id="jl1-IO-AaM"/>
+                                        <constraint firstItem="ahd-fb-OcL" firstAttribute="leading" secondItem="ZU9-l7-GZb" secondAttribute="leading" id="jvC-kv-mJY"/>
+                                        <constraint firstItem="ckX-W9-pnO" firstAttribute="top" secondItem="ahd-fb-OcL" secondAttribute="bottom" constant="20" id="kEf-Gb-dJq"/>
+                                        <constraint firstItem="ZU9-l7-GZb" firstAttribute="top" secondItem="WrR-oL-eDk" secondAttribute="topMargin" constant="12" id="tPV-Ua-tLt"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ckX-W9-pnO" secondAttribute="trailing" constant="20" symbolic="YES" id="wgh-K7-xaq"/>
+                                        <constraint firstItem="ahd-fb-OcL" firstAttribute="leading" secondItem="ckX-W9-pnO" secondAttribute="leading" id="ygd-QN-Wc8"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imgKatalogBuku" destination="aU2-sm-EpA" id="vrT-kN-fqF"/>
-                                    <outlet property="labelJudulBuku" destination="ahd-fb-OcL" id="A6Y-ye-WV5"/>
-                                    <outlet property="labelKategori" destination="ZU9-l7-GZb" id="RHO-lg-2Af"/>
-                                    <outlet property="labelPenulis" destination="ckX-W9-pnO" id="Y7m-WY-bHd"/>
-                                    <outlet property="labelTglTerbit" destination="AHA-P5-bh6" id="WiE-zk-GYP"/>
+                                    <outlet property="imgKatalogBuku" destination="aU2-sm-EpA" id="xw1-BU-hzO"/>
+                                    <outlet property="labelJudulBuku" destination="ahd-fb-OcL" id="NuI-AI-Kgl"/>
+                                    <outlet property="labelKategori" destination="ZU9-l7-GZb" id="hJq-nM-uOU"/>
+                                    <outlet property="labelPenulis" destination="ckX-W9-pnO" id="lUT-ci-PbU"/>
+                                    <outlet property="labelTglTerbit" destination="Gnl-V7-XGg" id="inS-b8-MaS"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -535,10 +536,88 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Katalog Buku" id="OSw-83-Rbe"/>
+                    <connections>
+                        <segue destination="t0W-QD-R6v" kind="modal" identifier="detailBuku" id="jbc-12-XLV"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5q-FM-dv6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="641.25" y="-1526.4084507042253"/>
+        </scene>
+        <!--Detail BukuVC-->
+        <scene sceneID="H5y-A2-uvw">
+            <objects>
+                <viewController id="t0W-QD-R6v" customClass="DetailBukuVC" customModule="D_Help" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tee-9n-FyD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3eF-Pc-hIv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.37563616039999997" green="0.75234287980000003" blue="0.90106529000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Detail Buku" id="8Lt-lg-eqK"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Judul Buku" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cL-pU-PjO">
+                                <rect key="frame" x="16" y="56" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kategori" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPf-jw-IML">
+                                <rect key="frame" x="16" y="248" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Penulis :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaX-Fb-FaR">
+                                <rect key="frame" x="16" y="266" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tgl Terbit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejt-Ed-8gP">
+                                <rect key="frame" x="16" y="286" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Synopis" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOc-Bb-mJ9">
+                                <rect key="frame" x="16" y="315" width="297" height="243"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ELi-6h-ka9">
+                                <rect key="frame" x="89" y="85" width="142" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="3GS-u6-WS0"/>
+                    </view>
+                    <connections>
+                        <outlet property="dtlImageBuku" destination="ELi-6h-ka9" id="alq-TI-Fwg"/>
+                        <outlet property="dtlJudulBuku" destination="4cL-pU-PjO" id="BIJ-UH-ph8"/>
+                        <outlet property="dtlKategori" destination="HPf-jw-IML" id="rjo-Iz-mDI"/>
+                        <outlet property="dtlPenulis" destination="qaX-Fb-FaR" id="2hB-CX-5I0"/>
+                        <outlet property="dtlSynopsis" destination="OOc-Bb-mJ9" id="Uce-fH-bI1"/>
+                        <outlet property="dtlTglTerbit" destination="ejt-Ed-8gP" id="HIu-oc-bSA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2NM-B2-Rrd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1433" y="-1526"/>
         </scene>
         <!--Kategori Buku-->
         <scene sceneID="bmk-YL-PAI">
@@ -553,30 +632,31 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="136"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sPV-jR-y7u" id="xGd-E2-JDi">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="136"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="135.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZN5-zP-HL3">
-                                            <rect key="frame" x="24" y="3" width="106" height="128"/>
+                                            <rect key="frame" x="40" y="11" width="106" height="128"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="ZN5-zP-HL3" secondAttribute="height" multiplier="53:64" id="GCH-dV-qoS"/>
-                                                <constraint firstAttribute="height" constant="128" id="UP8-TG-oU6"/>
-                                                <constraint firstAttribute="width" constant="106" id="ap8-wL-T2S"/>
+                                                <constraint firstAttribute="width" constant="106" id="6ev-tZ-rH6"/>
+                                                <constraint firstAttribute="width" secondItem="ZN5-zP-HL3" secondAttribute="height" multiplier="53:64" id="G2Z-nf-VcN"/>
+                                                <constraint firstAttribute="height" constant="128" id="OK8-tL-FMI"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategori" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdV-lX-ZAu">
-                                            <rect key="frame" x="147" y="57" width="70" height="21"/>
+                                            <rect key="frame" x="163" y="65.5" width="149" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" red="0.095417725780000004" green="0.66118147149999995" blue="0.90106529000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="ZN5-zP-HL3" firstAttribute="centerY" secondItem="xGd-E2-JDi" secondAttribute="centerY" id="8n2-du-Kr6"/>
-                                        <constraint firstItem="ZN5-zP-HL3" firstAttribute="leading" secondItem="xGd-E2-JDi" secondAttribute="leadingMargin" constant="16" id="FPx-jx-H4E"/>
-                                        <constraint firstItem="GdV-lX-ZAu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZN5-zP-HL3" secondAttribute="trailing" constant="8" symbolic="YES" id="IXe-SV-K6m"/>
-                                        <constraint firstItem="ZN5-zP-HL3" firstAttribute="centerY" secondItem="GdV-lX-ZAu" secondAttribute="centerY" id="kHn-hV-vWs"/>
-                                        <constraint firstAttribute="trailing" secondItem="GdV-lX-ZAu" secondAttribute="trailing" constant="103" id="nca-9I-aB3"/>
+                                        <constraint firstItem="GdV-lX-ZAu" firstAttribute="centerY" secondItem="xGd-E2-JDi" secondAttribute="centerY" id="NC4-pZ-Nm7"/>
+                                        <constraint firstItem="ZN5-zP-HL3" firstAttribute="leading" secondItem="xGd-E2-JDi" secondAttribute="leadingMargin" constant="32" id="PYq-Jj-cMR"/>
+                                        <constraint firstItem="GdV-lX-ZAu" firstAttribute="trailing" secondItem="xGd-E2-JDi" secondAttribute="trailingMargin" id="h1I-u9-FBg"/>
+                                        <constraint firstItem="ZN5-zP-HL3" firstAttribute="top" secondItem="xGd-E2-JDi" secondAttribute="topMargin" constant="3" id="kzQ-hH-wtd"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ZN5-zP-HL3" secondAttribute="bottom" constant="4.5" id="pmh-ae-XPF"/>
+                                        <constraint firstItem="GdV-lX-ZAu" firstAttribute="leading" secondItem="ZN5-zP-HL3" secondAttribute="trailing" constant="17" id="qPx-Fu-vgO"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -590,13 +670,7 @@
                             <outlet property="delegate" destination="Ke2-Od-zXV" id="bf4-Zs-Wa7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Kategori Buku" id="h7N-eE-Eql">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="back-hand-drawn-arrow" landscapeImage="back-hand-drawn-arrow" id="7Ea-O0-zl3">
-                            <connections>
-                                <segue destination="XDS-aR-wCO" kind="modal" id="X2N-3i-eup"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Kategori Buku" id="h7N-eE-Eql"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USt-Nw-g5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -843,6 +917,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="pBY-7S-CWx"/>
-        <segue reference="X2N-3i-eup"/>
+        <segue reference="XCa-n8-2fw"/>
     </inferredMetricsTieBreakers>
 </document>

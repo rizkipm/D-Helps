@@ -11,7 +11,7 @@ import UIKit
 class CellKatalogBuku: UITableViewCell {
     @IBOutlet weak var imgKatalogBuku: UIImageView!
     
-    @IBOutlet weak var labelTglTerbit: NSLayoutConstraint!
+    @IBOutlet weak var labelTglTerbit: UILabel!
     @IBOutlet weak var labelPenulis: UILabel!
     @IBOutlet weak var labelKategori: UILabel!
     @IBOutlet weak var labelJudulBuku: UILabel!
