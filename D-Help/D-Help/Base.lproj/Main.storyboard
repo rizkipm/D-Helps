@@ -670,7 +670,13 @@
                             <outlet property="delegate" destination="Ke2-Od-zXV" id="bf4-Zs-Wa7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Kategori Buku" id="h7N-eE-Eql"/>
+                    <navigationItem key="navigationItem" title="Kategori Buku" id="h7N-eE-Eql">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back-hand-drawn-arrow" landscapeImage="back-hand-drawn-arrow" id="7Ea-O0-zl3">
+                            <connections>
+                                <segue destination="XDS-aR-wCO" kind="modal" id="X2N-3i-eup"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USt-Nw-g5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -917,6 +923,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="pBY-7S-CWx"/>
-        <segue reference="XCa-n8-2fw"/>
+        <segue reference="X2N-3i-eup"/>
     </inferredMetricsTieBreakers>
 </document>
