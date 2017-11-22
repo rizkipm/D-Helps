@@ -16,6 +16,7 @@ class ViewControllerFeedKonsultasi: UIViewController, UITableViewDataSource, UIT
     
      var arrayKatalogBerita = [[String:String]]()
     
+    @IBOutlet weak var etPost: UITextField!
     
 
     @IBOutlet weak var tableFeed: UITableView!
@@ -23,8 +24,16 @@ class ViewControllerFeedKonsultasi: UIViewController, UITableViewDataSource, UIT
         super.viewDidLoad()
         tableFeed.delegate = self
         tableFeed.dataSource = self
+        loadData()
         
-        Alamofire.request("http://localhost/DehelpServer/index.php/api/getKategoriBuku").responseJSON { (response) in
+        
+        
+
+        // Do any additional setup after loading the view.
+    }
+    
+    func loadData() {
+        Alamofire.request("http://localhost/DehelpServer/index.php/api/getFeedAllKonsulatasi").responseJSON { (response) in
             
             //check response
             if response.result.isSuccess {
@@ -48,10 +57,6 @@ class ViewControllerFeedKonsultasi: UIViewController, UITableViewDataSource, UIT
                 
             }
         }
-        
-        
-
-        // Do any additional setup after loading the view.
     }
     
     
@@ -60,20 +65,78 @@ class ViewControllerFeedKonsultasi: UIViewController, UITableViewDataSource, UIT
         return arrayKatalogBerita.count
     }
     
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    
+    @IBAction func btnPosting(_ sender: Any) {
+        
+        if etPost.text == "" {
+            // create the alert
+            let alert = UIAlertController(title: "Warning", message: "Please write some teks", preferredStyle: UIAlertControllerStyle.alert)
+            
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
+        }else{
+            let nampungData = etPost.text
+            let params = ["judul_post" : nampungData!]
+            let url = "http://localhost/DehelpServer/index.php/api/inputPostUser"
+            
+            Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding.default, headers: nil).responseJSON(completionHandler: { (response) in
+                //check response
+                if response.result.isSuccess {
+                    //kalau response success kita ambil json
+                    let json = JSON(response.result.value as Any)
+                    
+                    let nResult = json["result"].stringValue
+                    
+                    if nResult == "true"{
+                        print("Data Berhasil di post")
+                        self.loadData()
+                    }else{
+                        let alert = UIAlertController(title: "Failed", message: "Data Gagal disimpan", preferredStyle: UIAlertControllerStyle.alert)
+                        
+                        // add an action (button)
+                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                        
+                        // show the alert
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                        
+                    
+                   
+                    
+                    
+                    
+                    
+                }
+                else{
+                    print("error server")
+                }
+            })
+            
+        }
+        
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellFeedKonsultasi", for: indexPath) as! cellFeedKonsultasi
         
         // Configure the cell...
         
         var idServerBuku = arrayKatalogBerita[indexPath.row]
+
         
-        
-        var id_kategori =  idServerBuku["id_kategori"]
-        let kategori = idServerBuku["nama_kategori"]
+        var id_post =  idServerBuku["id_post"]
+        let judul_post = idServerBuku["judul_post"]
+        let tgl_post = idServerBuku["tgl_post"]
+        let nama_user = idServerBuku["nama_user"]
         
         
         //pindahkan ke label
-        cell.feedJudul.text = kategori
+        cell.feedJudul.text = judul_post
+        cell.feedBy.text = "By : " + nama_user!
+        cell.feedTgl.text = "Tanggal : " + tgl_post!
         
         
         
