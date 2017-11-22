@@ -23,6 +23,7 @@ class KatalogBukuTC: UITableViewController {
     var nSynopsis:String?
     var nPenulisbuku:String?
     var nTglKategori:String?
+    var nIsiBuku:String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,6 +96,7 @@ class KatalogBukuTC: UITableViewController {
         cell.labelJudulBuku.text = judulbuku
         cell.labelKategori.text = nama_kategori
         cell.labelPenulis.text = penulis_buku
+        cell.labelTglTerbit.text = tglTerbit
         
         
         
@@ -120,6 +122,53 @@ class KatalogBukuTC: UITableViewController {
         }
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        //mengecek data yang dikirim
+        print("Row \(indexPath.row)selected")
+        
+        let task = arrayKatalogBerita[indexPath.row]
+        //memasukan data ke variable namaSelected dan image selected ke masing masing variable nya
+        nJudulBuku = task["judul_buku"] as? String
+        //  gambarSelcetd = task["gambar"] as! String
+        nKategori = task["nama_kategori"] as? String
+        nCoverBuku = task["cover_buku"] as? String
+        nSynopsis = task["synopsis"] as? String
+        nPenulisbuku = task["penulis_buku"] as? String
+        nTglKategori = task["tanggal_terbit"] as? String
+        nIsiBuku = task["isi_buku"] as? String
+        
+        
+        
+        
+        
+        
+        //memamnggil segue passDataDetail
+        performSegue(withIdentifier: "detailBuku", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //mengecek apakah segue nya ada atau  tidak`
+        if segue.identifier == "detailBuku"{
+            //kondisi ketika segue nya ada
+            //mengirimkan data ke detailViewController
+            //        let kirimData = segue.destination as! KontakViewController
+            //mengirimkan data ke masing2 variable
+            //mengirimkan nama wisata
+            
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let controller = segue.destination as! DetailBukuVC
+                let value = arrayKatalogBerita[indexPath.row]
+                controller.passJudulBuku = value["judul_buku"]
+                controller.passKategori = value["nama_kategori"]
+                controller.passCoverBuku = value["cover_buku"]
+                controller.passSynpsis = value["synopsis"]
+                controller.passPenulisBuku = value["penulis_buku"]
+                controller.passTglKategori = value["tanggal_terbit"]
+                controller.passIsiBuku = value["isi_buku"]
+                // controller.passgambar = value["gambar"] as? UIImage
+            }
+        }
     }
     
     
