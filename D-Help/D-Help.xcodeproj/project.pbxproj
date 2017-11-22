@@ -17,6 +17,10 @@
 		9A58497A1FC51F7F005CF88F /* D_HelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5849791FC51F7F005CF88F /* D_HelpTests.swift */; };
 		9A5849851FC51F7F005CF88F /* D_HelpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5849841FC51F7F005CF88F /* D_HelpUITests.swift */; };
 		9A5849931FC5590C005CF88F /* IMG_8081.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9A5849921FC55909005CF88F /* IMG_8081.JPG */; };
+		9AF9E4901FC57369000CD9C8 /* KategoriBukuTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9E48F1FC57369000CD9C8 /* KategoriBukuTableController.swift */; };
+		9AF9E4921FC57389000CD9C8 /* CellBukuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9E4911FC57389000CD9C8 /* CellBukuTableViewCell.swift */; };
+		9AF9E4941FC57C55000CD9C8 /* KatalogBukuTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9E4931FC57C55000CD9C8 /* KatalogBukuTC.swift */; };
+		9AF9E4961FC57CD4000CD9C8 /* CellKatalogBuku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9E4951FC57CD4000CD9C8 /* CellKatalogBuku.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		9A5849841FC51F7F005CF88F /* D_HelpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D_HelpUITests.swift; sourceTree = "<group>"; };
 		9A5849861FC51F7F005CF88F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A5849921FC55909005CF88F /* IMG_8081.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_8081.JPG; sourceTree = "<group>"; };
+		9AF9E48F1FC57369000CD9C8 /* KategoriBukuTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriBukuTableController.swift; sourceTree = "<group>"; };
+		9AF9E4911FC57389000CD9C8 /* CellBukuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellBukuTableViewCell.swift; sourceTree = "<group>"; };
+		9AF9E4931FC57C55000CD9C8 /* KatalogBukuTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatalogBukuTC.swift; sourceTree = "<group>"; };
+		9AF9E4951FC57CD4000CD9C8 /* CellKatalogBuku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellKatalogBuku.swift; sourceTree = "<group>"; };
 		E201D9D4A6DB4551229263EE /* Pods-D-Help.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-D-Help.release.xcconfig"; path = "Pods/Target Support Files/Pods-D-Help/Pods-D-Help.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +141,10 @@
 				9A58496D1FC51F7F005CF88F /* LaunchScreen.storyboard */,
 				9A5849701FC51F7F005CF88F /* Info.plist */,
 				9A5849681FC51F7F005CF88F /* D_Help.xcdatamodeld */,
+				9AF9E48F1FC57369000CD9C8 /* KategoriBukuTableController.swift */,
+				9AF9E4911FC57389000CD9C8 /* CellBukuTableViewCell.swift */,
+				9AF9E4931FC57C55000CD9C8 /* KatalogBukuTC.swift */,
+				9AF9E4951FC57CD4000CD9C8 /* CellKatalogBuku.swift */,
 			);
 			path = "D-Help";
 			sourceTree = "<group>";
@@ -351,9 +363,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF9E4961FC57CD4000CD9C8 /* CellKatalogBuku.swift in Sources */,
+				9AF9E4921FC57389000CD9C8 /* CellBukuTableViewCell.swift in Sources */,
+				9AF9E4941FC57C55000CD9C8 /* KatalogBukuTC.swift in Sources */,
 				9A5849641FC51F7F005CF88F /* ViewController.swift in Sources */,
 				9A5849621FC51F7F005CF88F /* AppDelegate.swift in Sources */,
 				9A58496A1FC51F7F005CF88F /* D_Help.xcdatamodeld in Sources */,
+				9AF9E4901FC57369000CD9C8 /* KategoriBukuTableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
