@@ -586,10 +586,10 @@
             </objects>
             <point key="canvasLocation" x="3757.5" y="975"/>
         </scene>
-        <!--View Controller-->
+        <!--Face Scan Vc-->
         <scene sceneID="FNh-yU-Qpp">
             <objects>
-                <viewController id="x0m-1i-Hei" sceneMemberID="viewController">
+                <viewController id="x0m-1i-Hei" customClass="FaceScanVc" customModule="D_Help" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eM5-Fe-jho">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -626,6 +626,9 @@
                                 <rect key="frame" x="63" y="449" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="gallery"/>
+                                <connections>
+                                    <action selector="btnOpenGaleri:" destination="x0m-1i-Hei" eventType="touchUpInside" id="rS6-Ve-IBZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cln-k1-ZyW">
                                 <rect key="frame" x="194" y="449" width="64" height="64"/>
@@ -650,6 +653,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="pm9-0I-60f"/>
                     </view>
+                    <connections>
+                        <outlet property="labelInfo" destination="Xxa-dZ-gWj" id="bB6-UN-03c"/>
+                        <outlet property="myImageView" destination="Mhc-d9-vMe" id="mJm-et-DFw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uO4-Ah-XwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1356,7 +1363,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="rSr-v0-eiX"/>
-        <segue reference="heZ-u1-lMD"/>
+        <segue reference="12f-4H-1vd"/>
         <segue reference="2iP-nm-ilz"/>
     </inferredMetricsTieBreakers>
 </document>

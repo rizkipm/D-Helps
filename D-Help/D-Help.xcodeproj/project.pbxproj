@@ -24,6 +24,7 @@
 		9AC9B4EF1FC5A14200DFFE7C /* BacaLengkapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC9B4EE1FC5A14200DFFE7C /* BacaLengkapVC.swift */; };
 		9AC9B4F11FC5AE4F00DFFE7C /* TextToVoiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC9B4F01FC5AE4F00DFFE7C /* TextToVoiceVC.swift */; };
 		9AD078AE1FC58BF9009846C4 /* DetailBukuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD078AD1FC58BF9009846C4 /* DetailBukuVC.swift */; };
+		9AD468991FC65BBA00D5944D /* FaceScanVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD468981FC65BBA00D5944D /* FaceScanVc.swift */; };
 		9AD5C57A1FC5C16E0013C417 /* cellFeedKonsultasi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5C5791FC5C16E0013C417 /* cellFeedKonsultasi.swift */; };
 		9AD5C57C1FC5C26E0013C417 /* FeedTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5C57B1FC5C26E0013C417 /* FeedTableVC.swift */; };
 		9AD5C57E1FC5C3650013C417 /* ViewControllerFeedKonsultasi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5C57D1FC5C3650013C417 /* ViewControllerFeedKonsultasi.swift */; };
@@ -77,6 +78,7 @@
 		9AC9B4EE1FC5A14200DFFE7C /* BacaLengkapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacaLengkapVC.swift; sourceTree = "<group>"; };
 		9AC9B4F01FC5AE4F00DFFE7C /* TextToVoiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToVoiceVC.swift; sourceTree = "<group>"; };
 		9AD078AD1FC58BF9009846C4 /* DetailBukuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBukuVC.swift; sourceTree = "<group>"; };
+		9AD468981FC65BBA00D5944D /* FaceScanVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceScanVc.swift; sourceTree = "<group>"; };
 		9AD5C5791FC5C16E0013C417 /* cellFeedKonsultasi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellFeedKonsultasi.swift; sourceTree = "<group>"; };
 		9AD5C57B1FC5C26E0013C417 /* FeedTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableVC.swift; sourceTree = "<group>"; };
 		9AD5C57D1FC5C3650013C417 /* ViewControllerFeedKonsultasi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFeedKonsultasi.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				9A5DE8C61FC5ECA50090DD57 /* SpeakUPVC.swift */,
 				9A5DE8CE1FC5FA960090DD57 /* RegisterVC.swift */,
 				9A5DE8D01FC5FABA0090DD57 /* LoginVC.swift */,
+				9AD468981FC65BBA00D5944D /* FaceScanVc.swift */,
 			);
 			path = "D-Help";
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				9AF9E4941FC57C55000CD9C8 /* KatalogBukuTC.swift in Sources */,
 				9AD7A8C91FC5D76C007A1BDA /* CellMemberKonsultan.swift in Sources */,
 				9A5849641FC51F7F005CF88F /* ViewController.swift in Sources */,
+				9AD468991FC65BBA00D5944D /* FaceScanVc.swift in Sources */,
 				9AD5C57A1FC5C16E0013C417 /* cellFeedKonsultasi.swift in Sources */,
 				9A5849621FC51F7F005CF88F /* AppDelegate.swift in Sources */,
 				9A5DE8C71FC5ECA50090DD57 /* SpeakUPVC.swift in Sources */,
